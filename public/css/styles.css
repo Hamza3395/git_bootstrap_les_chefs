@@ -9604,6 +9604,11 @@ header {
   color: black;
 }
 
+.nmp {
+  font-size: 35px;
+  color: white;
+}
+
 .bnh {
   font-size: 60px;
   padding-top: 10px;
@@ -9656,6 +9661,7 @@ header {
   float: left;
   margin-left: -15px;
 }
+
 .azert {
   float: right;
   margin-right: -15px;
@@ -9679,7 +9685,48 @@ header {
 
 .gvn {
   font-size: 15px;
-  padding-bottom: -20px;
+}
+
+.chef {
+  background-image: url("../../images/team_background.jpg");
+  background-repeat: no-repeat;
+  height: 580px;
+}
+
+.dnj {
+  border-bottom-color: lightgrey;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.wz {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: transparent;
+  color: black;
+}
+
+.gfs {
+  background-image: url("../../images/book_table_bg.jpg");
+  background-size: 100%;
+  width: 100%;
+  border-radius: 20px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.dfd {
+  font-size: 30px;
+}
+
+.bup {
+  padding: 15px;
+  background-color: #CA234F;
+  color: white;
+  border-radius: 50px;
+  border-color: transparent;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
