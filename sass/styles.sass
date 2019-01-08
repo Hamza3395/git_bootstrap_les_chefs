@@ -1,21 +1,35 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss'
-.foq
-    font-family: 'Courgette', cursive
+
+@font-face 
+    font-family: courgette
+    src: url('../fonts/Courgette/Courgette-Regular.ttf')
+@import './_variables.scss'
+
+$couleur: #CA234F
+
+.whatever
+    font-family: 'courgette'
     font-size: 52px
+.whatever-smart
+    font-family: 'courgette'
+    font-size: 32px
 header
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../../images/banner1.jpg")
     background-size: 100%
     width: 100%
     background-repeat: no-repeat
     padding-bottom: 155px
-.pol
+.nav1
     font-size: 13px
     border-bottom: 1px solid white
     border-top: 1px solid white
-    padding-top: 15px
-.ii
+    padding-top: 0px
+.logo-nav
     width: 50%
-.sz
+.titre-principale
+    max-width: 50%
+    margin: 0 auto
+.titre-prin-smart
     max-width: 50%
     margin: 0 auto
 .but1
@@ -27,12 +41,27 @@ header
     border-radius: 18px
     border-color: transparent
     font-size: 13px
-    background-color: #CA234F
-.na
-    color: #CA234F
-.sa
+    background-color: $couleur
+.span-titre1
+    color: $couleur
+.span-titre1-smart
+    color: $couleur
+    font-size: 20px
+.span-titre2
     font-size: 40px
-.foo
+.span-titre2-smart
+    font-size: 25px
+.span-titre3
+    font-family: courgette
+    padding-top: 30px
+    margin-bottom: -10px
+.span-titre4
+    font-size: 35px
+    color: black
+.span-titre5
+    font-size: 35px
+    color: white
+.div-our-story
     background-image: url('../../images/bottom_decoration_img.png')
     background-color: rgba(0, 0, 0, 0.9)
     height: 10px
@@ -41,28 +70,24 @@ header
 .section
     background-image: url('../../images/main_bg.jpg')
     width: 100%
-.lii 
+.cont-all
     background-color: white
     border-style: solid
     border-width: 1px
     border-color: lightgrey
     overflow: hidden
-.maz
-    font-family: 'Courgette', cursive
-    padding-top: 30px
-    margin-bottom: -10px
-.sol
-    color: #CA234F
+.sze
+    color: $couleur
     font-size: 50px
-.vd
-    max-width: 45%
+.txt-first
+    max-width: 50%
     margin: auto
-.nmf
-    font-size: 35px
-    color: black
-.nmp
-    font-size: 35px
-    color: white
+.texte-nav
+    background-color: transparent
+    padding-top: 15px
+.texte-nav:hover
+    background-color: $couleur
+    padding-top: 15px
 .bnh
     font-size: 60px
     padding-top: 10px
@@ -73,30 +98,51 @@ header
     border-right-width: 1px
     border-right-color: lightgrey
     border-bottom-color: lightgrey
-.bn
+.bnh:hover
     font-size: 60px
-    padding-top: 15px
-    color: #CA234F
+    padding-top: 10px
+    color: $couleur
     border-bottom-style: solid
     border-right-style: solid
     border-bottom-width: 1px
     border-right-width: 5px
-    border-right-color: #CA234F
+    border-right-color: $couleur
+    border-bottom-color: lightgrey
+.bn
+    font-size: 60px
+    padding-top: 15px
+    color: lightgrey
+    border-bottom-style: solid
+    border-right-style: solid
+    border-right-color: lightgrey
+    border-right-width: 1px
+    border-bottom-width: 1px
+    border-bottom-color: lightgrey
+.bn:hover
+    font-size: 60px
+    padding-top: 15px
+    color: $couleur
+    border-bottom-style: solid
+    border-right-style: solid
+    border-bottom-width: 1px
+    border-right-width: 5px
+    border-right-color: $couleur
     border-bottom-color: lightgrey
 .sdp
     font-size: 25px
-    font-family: 'Courgette', cursive
+    font-family: courgette
     color: black
+    
 .mpk
     width: 25%
     border-radius: 50%
     border-style: solid
     border-width: 6px
     border-color: #dbd4d4de
-.az
+.img-box-left-top
     float: left
     margin-left: -15px
-.aze
+.img-box-right-top
     float: right
     margin-right: -15px
 .azer
@@ -112,84 +158,97 @@ header
 .ji
     background-color: rgb(236, 231, 231)
     border-color: transparent
-    color: #CA234F
+    color: $couleur
     padding-right: 15px
     padding-left: 15px
     float: right
     font-size: 20px
-.gvn
+.media-coffee
     font-size: 15px
 .chef
     background-image: url("../../images/team_background.jpg")
     background-repeat: no-repeat
-    height: 580px
-.dnj
+    height: auto
+    margin-top: -20px
+.chefsmart
+    background-image: url("../../images/team_background.jpg")
+    background-repeat: no-repeat
+    height: auto
+    margin-top: -20px
+.txt-sous-chef
     border-bottom-color: lightgrey
     border-bottom-style: solid
     border-bottom-width: 1px
-.wz
+.txt-sous-chefsmart
+    width: 80%
+    border-bottom-color: lightgrey
+    border-bottom-style: solid
+    border-bottom-width: 1px
+.in-all
     width: 70%
     padding: 10px
     border-radius: 10px
     border-color: transparent
     color: black
-.gfs
+    background-color: white
+.signin
     background-image: url("../../images/book_table_bg.jpg")
     background-size: 100%
     width: 100%
     border-radius: 20px
     max-width: 70%
     margin: auto
-.dfd
+.signin2
     font-size: 30px
-.bup
+.but-booknow
     padding: 15px
-    background-color: #CA234F
+    background-color: $couleur
     color: white
     border-radius: 50px
     border-color: transparent
     margin: auto
-.bul
+.but-knowmore
     padding: 15px
-    background-color: #CA234F
+    background-color: $couleur
     color: white
     border-radius: 50px
     border-color: transparent
-.frg
+.img-blog
     border-radius: 20px
     border-color: lightgrey
     border-style: solid
     border-width: 5px
     max-width: 80%
-.sl
-    background-color: #CA234F
-    max-width: 35%
+.date-12april
+    background-color: $couleur
+    max-width: 70%
     padding: 15px
     border-radius: 10px
-    position: absolute
-    top: 104.55cm
-    left: 18.5cm
-.sll
-    background-color: #CA234F
-    max-width: 35%
+    position: relative
+    bottom: 0.7cm
+    left: 2.1cm
+.date-12april2
+    background-color: $couleur
+    max-width: 70%
     padding: 15px
     border-radius: 10px
-    position: absolute
-    top: 104.55cm
-    left: 6cm
-.spm
+    position: relative
+    bottom: 0.7cm
+    left: 2.2cm
+.txt-1
     max-width: 70%
     margin: auto
-.aj
+.img-box-bot-right
     float: right
     margin-right: -15px
-.aje
+.img-box-bot-left
     float: left
     margin-left: -15px
 .kdg
     background-image: url("../../images/testimonials_background.jpg")
     width: 100%
-    height: 400px
+    height: auto
+    padding-bottom: 50px
 .yh
     border-radius: 50%
     border-color: white
@@ -203,12 +262,14 @@ header
     border-width: 1px
     padding: 10px
 .ls
-    color: #CA234F
-.section52
+    color: $couleur
+.section5
     background-image: url('../../images/main_bg.jpg')
     margin-top: -20px
+    margin-bottom: -50px
+    padding-bottom: 35px
 .sdc
-    background-color: #CA234F
+    background-color: $couleur
     max-width: 30%
     border-radius: 10px
     margin: auto
@@ -234,10 +295,39 @@ header
     border-style: solid
     border-color: white
     border-width: 1px
-    background-color: #CA234F
+    background-color: $couleur
     color: white
     margin-top: 10px
     padding: 8px
     margin-right: 8px
 .fini
-    background-color: #CA234F
+    background-color: $couleur
+.cont-left
+    margin-left: 50px
+
+@media screen and (max-width: 990px)
+    .computer
+        display: none
+
+@media screen and (min-width: 991px)
+    .smartphone
+        display: none
+        float: none
+@media screen and (max-width: 990px)
+    .chef
+        display: none
+@media screen and (min-width: 991px)
+    .chefsmart
+        display: none
+        float: none
+@media screen and (max-width: 990px)
+    .deco-line
+        display: none
+@media screen and (max-width: 990px)
+    .titre-principale
+        display: none
+        float: none
+@media screen and (min-width: 991px)
+    .titre-prin-smart
+        display: none
+        float: none
